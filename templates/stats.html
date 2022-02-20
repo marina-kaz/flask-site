@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Статистика {% endblock %}
+
+{% block content %}
+        <img src="https://sun9-12.userapi.com/impf/SylVQkfobEQUh1FLDMaLTT3TVmRwb2Bz2Ba89Q/JVftTnSPtEo.jpg?size=1280x720&quality=96&proxy=1&sign=aa04c8b56ab495305a746366953e0dc7" width="100%">
+        <p>Всего {{total_answers}} человек заполнил(о) опросник! </p>
+        <p>Из них {{assistants}} представились ассистентами, а всего мою работу проверяо {{checking}} человек. </p>
+        <p>{{design}} человек оценило мой дизайн, {{content}} - контент, {{author}} - меня...</p>
+        <p>При этом {{incorrect}} не знают моего имени! </p>
+        <p>Самому взрослому респонденту {{max_age}} месяцев (это {{max_age // 12}} лет)</p>
+        <p>В самом высоком респонденте {{max_height}} у.е.!</p>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %} :ссс {% endblock %}
+
+{% block content %}
+
+<form method="GET" action="/submit">
+    <p>
+        <h3> 0. Давайте познакомимся! </h3>
+        <p>
+            <h5> Как зовут Вашу маму? </h5>
+             <input type="text" name="mothername" placeholder="Прасковья">
+        </p>
+        <p>
+            <h5> Сколько вам сейчас месяцев? </h5>
+             <input type="text" name="age" placeholder="239">
+        </p>
+        <p>
+            <h5> Какой у вас рост? </h5>
+             <input type="text" name="height" placeholder="164">
+        </p>
+    </p>
+
+    <h3> Поделитесь своим мнением! </h3>
+    <p>
+        <h5> 1. Пожалуйста, выберите все утверждения, описывающие вас. </h5>
+        <input type="checkbox" name="assistant" value="1"> Я - ассистент по программированию. <br />
+        <input type="checkbox" name="check" value="1"> Я проверяю данную домашнюю работу. <br />
+        <input type="checkbox" name="likes" value="1"> Мне нравится то, что я вижу. <br />
+    </p>
+        <p>
+        <h5> 2. Нравится ли Вам данная домашняя работа? </h5>
+        <input type="radio" name="extent" value="yes"> Да<br />
+        <input type="radio" name="extent" value="very"> Очень<br />
+    </p>
+        <p>
+           <h5>  3. Что вам нравится в данной домашней работе?</h5>
+           <input type="checkbox" name="aspects" value="design"> Дизайн <br />
+           <input type="checkbox" name="aspects" value="content"> Контент <br />
+           <input type="checkbox" name="aspects" value="author"> Автор <br />
+        </p>
+
+    <p>
+        <h5> 4. Как зовут автора?</h5>
+        <input type="radio" name="author_name" value="mk"> Марина Казюлина<br />
+        <input type="radio" name="author_name" value="km"> Карина Мазюлина<br />
+    </p>
+    <p>
+        <h5> 5. Опишите Ваш опыт проверки данного домашнего задания одним словом </h5>
+         <input type="text" name="impression" placeholder="Восторг!">
+    </p>
+    <p>
+        <input type="submit" value="Отправить ответы и посмотреть на собаку автора">
+    </p>
+</form>
+
+
+{% endblock %}
